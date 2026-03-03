@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace KitchenFactoryApp.Classes
 {
-    internal class MatchaTea : Drink
+    internal class MatchaTea
     {
         private string description = "зеленый чай матча";
 
-        public override string GetDescription() { return description; }
+        public string GetDescription() { return description; }
     }
 }
+
