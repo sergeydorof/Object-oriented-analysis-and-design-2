@@ -14,14 +14,6 @@ namespace KitchenFactoryApp
 {
     public partial class Form1 : Form
     {
-        //private Client client;
-
-        //private Dictionary<string, KitchenFactory> factories = new Dictionary<string, KitchenFactory>()
-        //{
-        //    { "Японская", new JapaneseKitchenFactory() },
-        //    { "Итальянская", new ItalianKitchenFactory() }
-        //};
-
         private List<string> kitchens = new List<string> { "Японская", "Итальянская" };
 
         public Form1()
@@ -31,25 +23,17 @@ namespace KitchenFactoryApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //comboBoxCuisines.Items.AddRange(factories.Keys.ToArray());
             comboBoxCuisines.Items.AddRange(kitchens.ToArray());
             comboBoxCuisines.SelectedIndex = 0;
-            //client = new Client(factories["Японская"]);
         }
 
         private void comboBoxCuisines_SelectIndexChanged(object sender, EventArgs e)
         {
-            //if (client != null)
-            //{
-            //    string selected = comboBoxCuisines.SelectedItem.ToString();
-            //    client.SetFactory(factories[selected]);
-            //}
+
         }
 
         private void buttonDrink_Click(object sender, EventArgs e)
         {
-            //string result = client.GetFactory().CreateDrink().GetDescription();
-
             string result;
 
             if (comboBoxCuisines.SelectedItem.ToString() == "Итальянская")
@@ -68,8 +52,6 @@ namespace KitchenFactoryApp
 
         private void buttonMainCourse_Click(object sender, EventArgs e)
         {
-            //string result = client.GetFactory().CreateMainCourse().GetDescription();
-
             string result;
 
             if (comboBoxCuisines.SelectedItem.ToString() == "Японская")
@@ -88,8 +70,6 @@ namespace KitchenFactoryApp
 
         private void buttonDessert_Click(object sender, EventArgs e)
         {
-            //string result = client.GetFactory().CreateDessert().GetDescription();
-
             string result;
 
             if (comboBoxCuisines.SelectedItem.ToString() == "Японская")
@@ -107,3 +87,4 @@ namespace KitchenFactoryApp
         }
     }
 }
+
