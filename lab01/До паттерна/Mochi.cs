@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace KitchenFactoryApp.Classes
 {
-    internal class Mochi : Dessert
+    internal class Mochi
     {
         private string description = "клубничный моти";
 
-        public override string GetDescription() { return description; }
+        public string GetDescription() { return description; }
     }
 }
+
