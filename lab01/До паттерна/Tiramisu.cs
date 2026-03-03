@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace KitchenFactoryApp.Classes
 {
-    internal class Tiramisu : Dessert
+    internal class Tiramisu
     {
         private string description = "классический тирамису";
 
-        public override string GetDescription() { return description; }
+        public string GetDescription() { return description; }
     }
 }
+
