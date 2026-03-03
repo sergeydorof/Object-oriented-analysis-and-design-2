@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace KitchenFactoryApp.Classes
 {
-    internal class Sushi : MainCourse
+    internal class Sushi
     {
         private string description = "сет суши";
 
-        public override string GetDescription() { return description; }
+        public string GetDescription() { return description; }
     }
 }
+
